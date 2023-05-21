@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommand>D:\PT4\PT4Demo.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-gTMDemoCpp -n999 </LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>.\x64\Debug</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommand>C:\Program Files (x86)\PT4\PT4Demo.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>.\Debug</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-gTMDemoCpp -n999 </LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommand>C:\Program Files %28x86%29\PT4\PT4Demo.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-gTMDemoCpp -n999 </LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>.\Debug</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommand>C:\Program Files %28x86%29\PT4\PT4Demo.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-gTMDemoCs -n999 </LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>.\x64\Release</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
